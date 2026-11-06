@@ -3,56 +3,317 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Política de Privacidade - Controle de Gastos</title>
+  <title>Política de Privacidade e Termos de Uso - Controle de Gastos</title>
   <style>
+    :root {
+      --primary: #16a34a;
+      --primary-dark: #064e3b;
+      --bg: #f4f7f5;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --danger: #dc2626;
+    }
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      line-height: 1.6;
-      background: #f9f9f9;
-      color: #333;
-    }
-    h1 {
-      color: #2c3e50;
-    }
-    h2 {
-      color: #34495e;
-      margin-top: 25px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 24px 16px 60px;
+      line-height: 1.65;
+      background: var(--bg);
+      color: var(--text);
     }
     .container {
-      max-width: 800px;
-      margin: auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 880px;
+      margin: 0 auto;
+      background: var(--card);
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+      overflow: hidden;
+    }
+    .hero {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: #ffffff;
+      padding: 36px 32px;
+    }
+    .hero .badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.16);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      margin-bottom: 12px;
+    }
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    .hero p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 15px;
+    }
+    .content {
+      padding: 32px;
+    }
+    h2 {
+      color: var(--primary-dark);
+      font-size: 19px;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #dcfce7;
+    }
+    h3 {
+      color: var(--text);
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+    p, li {
+      color: var(--muted);
+      font-size: 15px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    strong {
+      color: var(--text);
+    }
+    .alert-box {
+      background: #f0fdf4;
+      border-left: 4px solid var(--primary);
+      padding: 16px 18px;
+      border-radius: 8px;
+      margin: 18px 0;
+    }
+    .danger-box {
+      background: #fef2f2;
+      border-left: 4px solid var(--danger);
+      padding: 16px 18px;
+      border-radius: 8px;
+      margin: 18px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+    }
+    th {
+      background: #f8fafc;
+      color: var(--text);
+      font-weight: 700;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
+    }
+    a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .hero, .content {
+        padding: 24px 18px;
+      }
+      .hero h1 {
+        font-size: 22px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Política de Privacidade</h1>
-    <p>Bem-vindo ao aplicativo <strong>Controle de Gastos</strong>. A sua privacidade é importante para nós. Esta política explica como lidamos com seus dados.</p>
+    <div class="hero">
+      <span class="badge">CONFORMIDADE LGPD &amp; GOOGLE PLAY</span>
+      <h1>Política de Privacidade e Termos de Uso</h1>
+      <p>Aplicativo <strong>Controle de Gastos</strong> (Pacote: <code>com.rafael.franchini.controle_de_gastos</code>)</p>
+    </div>
 
-    <h2>1. Coleta de Informações</h2>
-    <p>O aplicativo pode coletar informações pessoais como nome, e-mail e dados financeiros inseridos pelo próprio usuário.</p>
+    <div class="content">
+      <p>
+        Esta Política de Privacidade descreve de forma transparente como o aplicativo <strong>Controle de Gastos</strong>, desenvolvido e mantido por <strong>Rafael Franchini (Rafa Tech Solutions)</strong> ("Controlador"), coleta, utiliza, armazena, protege e elimina dados pessoais dos usuários ("Titulares"), em estrita conformidade com a <strong>Lei Geral de Proteção de Dados Pessoais (LGPD – Lei Federal nº 13.709/2018)</strong>, o <strong>Marco Civil da Internet (Lei nº 12.965/2014)</strong> e as <strong>Políticas de Dados do Usuário da Google Play Store</strong>.
+      </p>
 
-    <h2>2. Uso das Informações</h2>
-    <p>Os dados coletados são utilizados exclusivamente para fornecer as funcionalidades do aplicativo, como relatórios e controle de gastos.</p>
+      <div class="alert-box">
+        <strong>Resumo de Transparência e Segurança:</strong>
+        <ul>
+          <li><strong>Não pedimos senhas bancárias:</strong> O aplicativo jamais solicita senhas de bancos, cartões de crédito, tokens ou acesso direto à sua conta bancária.</li>
+          <li><strong>Não vendemos seus dados:</strong> Seus dados financeiros e pessoais nunca são vendidos ou comercializados com terceiros.</li>
+          <li><strong>Permissões 100% opcionais:</strong> O uso da Câmera (scanner de Nota Fiscal) e da Leitura de Notificações (lançamento automático de compras) depende exclusivamente da sua ativação voluntária.</li>
+        </ul>
+      </div>
 
-    <h2>3. Compartilhamento</h2>
-    <p>Não compartilhamos suas informações pessoais com terceiros. Utilizamos serviços do <strong>Firebase (Google)</strong> para autenticação e armazenamento de dados.</p>
+      <h2>1. Dados Coletados e Finalidades (Art. 7º e 9º da LGPD)</h2>
+      <p>Coletamos apenas o mínimo necessário para o funcionamento seguro das funcionalidades contratadas pelo usuário:</p>
 
-    <h2>4. Segurança</h2>
-    <p>Adotamos medidas técnicas para proteger seus dados. Entretanto, nenhuma transmissão de dados pela internet é 100% segura.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Categoria de Dado</th>
+            <th>Dados Específicos</th>
+            <th>Finalidade Estrita e Base Legal (LGPD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Dados de Cadastro e Autenticação</strong></td>
+            <td>Nome (ou apelido), endereço de e-mail e identificador único de usuário (UID).</td>
+            <td>Criação da conta, login seguro, recuperação de senha e identificação de autoria nos lançamentos familiares. <em>(Execução de contrato – Art. 7º, V)</em>.</td>
+          </tr>
+          <tr>
+            <td><strong>Dados Financeiros Inseridos</strong></td>
+            <td>Descrições de gastos e ganhos, valores, categorias, formas de pagamento, datas e status (pago/pendente).</td>
+            <td>Geração de resumos financeiros, gráficos, calendário mensal e exportação de relatórios PDF/Excel para o próprio usuário. <em>(Execução de contrato – Art. 7º, V)</em>.</td>
+          </tr>
+          <tr>
+            <td><strong>Leitura Opcional de Notificações Bancárias</strong></td>
+            <td>Título e texto de notificações de transações financeiras (ex.: "Pix enviado", "Compra aprovada").</td>
+            <td>Cadastrar automaticamente gastos ou ganhos no aplicativo quando ativado pelo usuário. <em>(Consentimento explícito – Art. 7º, I)</em>.</td>
+          </tr>
+          <tr>
+            <td><strong>Câmera e QR Code de Nota Fiscal</strong></td>
+            <td>URL ou Chave de Acesso de 44 dígitos contida no QR Code da NFC-e / Cupom SAT.</td>
+            <td>Identificar estabelecimento, itens da nota e valor total para preenchimento automático do gasto. <em>(Consentimento explícito – Art. 7º, I)</em>.</td>
+          </tr>
+          <tr>
+            <td><strong>Publicidade e Diagnóstico</strong></td>
+            <td>Identificadores de publicidade do dispositivo (Advertising ID) e métricas técnicas de falha/desempenho.</td>
+            <td>Exibição de anúncios na versão gratuita via Google AdMob e estabilidade do app. <em>(Consentimento / Legítimo interesse – Art. 7º, I e IX)</em>.</td>
+          </tr>
+        </tbody>
+      </table>
 
-    <h2>5. Direitos do Usuário</h2>
-    <p>Você pode solicitar a exclusão da sua conta e dados armazenados entrando em contato pelo e-mail: <strong>rafaeltechsolutions@gmail.com</strong>.</p>
+      <h2>2. Declaração Específica sobre Permissões Sensíveis (Google Play Policy)</h2>
 
-    <h2>6. Alterações</h2>
-    <p>Esta política pode ser atualizada periodicamente. A versão mais recente sempre estará disponível nesta página.</p>
+      <h3>2.1. Acesso a Notificações (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>)</h3>
+      <p>
+        O aplicativo oferece o recurso opcional <strong>"Notificações de Bancos (Auto)"</strong>. Ao ativá-lo manualmente nas configurações do sistema Android:
+      </p>
+      <ul>
+        <li>O serviço filtra <strong>exclusivamente</strong> notificações originadas de aplicativos de bancos e carteiras digitais reconhecidos (como Nubank, Itaú, Bradesco, Banco Inter, Santander, Banco do Brasil, Caixa, C6 Bank, PicPay, Mercado Pago e similares).</li>
+        <li><strong>Notificações de aplicativos de mensagens pessoais (como WhatsApp, Telegram, SMS, redes sociais ou e-mails pessoais) são imediatamente ignoradas e descartadas localmente</strong>, sem qualquer leitura, armazenamento ou transmissão.</li>
+        <li>O texto da notificação financeira é processado apenas para extrair o valor, tipo de operação (Pix, crédito, débito) e nome do estabelecimento, registrando o lançamento diretamente na conta autenticada do próprio usuário no Firebase Firestore.</li>
+        <li>Você pode revogar essa permissão a qualquer momento em <em>Opções → Notificações de Bancos (Auto)</em> ou nas configurações do Android.</li>
+      </ul>
 
-    <p><em>Última atualização: Agosto de 2025</em></p>
+      <h3>2.2. Acesso à Câmera (<code>android.permission.CAMERA</code>)</h3>
+      <p>
+        A permissão de câmera é solicitada <strong>apenas</strong> quando você abre a função <strong>"Escanear Nota Fiscal (NFC-e)"</strong>:
+      </p>
+      <ul>
+        <li>As imagens da câmera são processadas em tempo real na memória do aparelho unicamente para decodificar o QR Code ou código de barras da nota fiscal.</li>
+        <li>O aplicativo <strong>não tira fotos, não grava vídeos e não armazena imagens</strong> do usuário ou do ambiente em nenhum servidor.</li>
+        <li>A chave/URL pública da nota fiscal é utilizada apenas para consultar os dados públicos do cupom fiscal (estabelecimento, CNPJ, itens e valor total) junto aos portais da SEFAZ ou BrasilAPI para preencher seu gasto automaticamente.</li>
+      </ul>
+
+      <h2>3. Compartilhamento Familiar ("Modo Família")</h2>
+      <p>
+        O aplicativo possui a funcionalidade opcional <strong>Família</strong>, que permite compartilhar a visualização de gastos e ganhos entre usuários:
+      </p>
+      <ul>
+        <li>Seus lançamentos são privados por padrão e vinculados exclusivamente ao seu <code>UID</code>.</li>
+        <li>O compartilhamento entre contas ocorre <strong>somente</strong> quando você envia uma solicitação pelo e-mail de outro usuário e o destinatário aceita expressamente o convite dentro do aplicativo.</li>
+        <li>Você pode remover membros ou sair de um grupo familiar a qualquer momento na aba <em>Opções → Família</em>.</li>
+      </ul>
+
+      <h2>4. Operadores de Dados e Serviços de Terceiros</h2>
+      <p>
+        Não vendemos, alugamos ou comercializamos dados pessoais. Para operar a infraestrutura técnica do aplicativo, utilizamos provedores globais que atuam como Operadores de Dados sob padrões internacionais de segurança (ISO 27001 / SOC 2):
+      </p>
+      <ul>
+        <li><strong>Google Firebase (Authentication &amp; Cloud Firestore):</strong> Autenticação segura de usuários, criptografia de senhas (hash) e banco de dados em nuvem criptografado em trânsito (TLS/HTTPS) e em repouso. (<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Política do Firebase</a>).</li>
+        <li><strong>Google AdMob:</strong> Exibição de anúncios na versão gratuita do aplicativo. (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidade do Google</a>).</li>
+      </ul>
+
+      <h2>5. Exclusão de Conta e Dados Pessoais (Direito à Eliminação)</h2>
+      <div class="danger-box">
+        <strong>Como excluir sua conta e todos os seus dados imediatamente:</strong>
+        <p style="margin-top: 8px; margin-bottom: 8px;">
+          Em cumprimento à LGPD (Art. 18, VI) e às diretrizes de Segurança de Dados do Google Play, você possui duas formas diretas para excluir permanentemente sua conta e todos os seus dados:
+        </p>
+        <ol style="margin-bottom: 0;">
+          <li>
+            <strong>Exclusão Imediata Dentro do Aplicativo (Recomendado):</strong><br>
+            Acesse o menu <strong>Opções → Excluir Conta Pessoal</strong> (ou <strong>Perfil → Excluir Conta Pessoal</strong>), confirme seu e-mail e senha atual e toque em <em>"Excluir Minha Conta Permanentemente"</em>. Essa ação apaga <strong>instantaneamente</strong>:
+            <ul>
+              <li>Seu cadastro de autenticação no Firebase Auth;</li>
+              <li>Seu documento de perfil (<code>users</code>);</li>
+              <li>Todos os seus gastos (<code>gastos</code>) e ganhos (<code>ganhos</code>) registrados;</li>
+              <li>Seus convites e vínculos em grupos familiares (<code>family_requests</code> e <code>usersFamily</code>).</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Solicitação de Exclusão via Web / E-mail (Sem precisar abrir o app):</strong><br>
+            Caso tenha desinstalado o aplicativo, envie um e-mail a partir do endereço cadastrado para <a href="mailto:rafaeltechsolutions@gmail.com?subject=Solicitacao%20de%20Exclusao%20de%20Conta%20-%20Controle%20de%20Gastos"><strong>rafaeltechsolutions@gmail.com</strong></a> com o assunto <em>"Exclusão de Conta - Controle de Gastos"</em>. Sua conta e todos os dados vinculados serão integralmente eliminados em até <strong>7 (sete) dias úteis</strong>.
+          </li>
+        </ol>
+      </div>
+
+      <h2>6. Direitos do Titular dos Dados (Art. 18 da LGPD)</h2>
+      <p>Você pode exercer a qualquer momento, gratuitamente, os seguintes direitos previstos na LGPD:</p>
+      <ul>
+        <li><strong>Acesso e Portabilidade:</strong> Visualizar todos os seus lançamentos no app e exportá-los a qualquer momento em formato <strong>PDF</strong> ou <strong>Excel (.xlsx)</strong> em <em>Opções → Exportar Relatórios</em>.</li>
+        <li><strong>Correção:</strong> Editar ou atualizar qualquer gasto, ganho ou dado de perfil diretamente no aplicativo.</li>
+        <li><strong>Anonimização, Bloqueio ou Eliminação:</strong> Excluir lançamentos individuais ou apagar integralmente sua conta e histórico.</li>
+        <li><strong>Revogação do Consentimento:</strong> Desativar permissões de câmera, notificações bancárias ou vínculo familiar a qualquer instante.</li>
+      </ul>
+
+      <h2>7. Isenção de Responsabilidade Financeira e Termos de Uso</h2>
+      <p>
+        Ao utilizar o aplicativo <strong>Controle de Gastos</strong>, o usuário declara estar ciente e de acordo que:
+      </p>
+      <ul>
+        <li>O aplicativo é uma <strong>ferramenta auxiliar e informativa de organização financeira pessoal e doméstica</strong>, fornecida "no estado em que se encontra" (<em>as is</em>).</li>
+        <li>O aplicativo <strong>não realiza transações bancárias reais</strong>, pagamentos de boletos ou transferências financeiras, nem substitui extratos bancários oficiais ou orientação contábil, fiscal ou jurídica profissional.</li>
+        <li>Os cálculos, projeções de salários recorrentes, leituras de QR Code de notas fiscais e capturas automáticas de notificações dependem das informações fornecidas pelo próprio usuário, pelos portais públicos da SEFAZ e pelas notificações emitidas pelo sistema Android, cabendo ao usuário conferir seus lançamentos.</li>
+        <li>O Desenvolvedor não se responsabiliza por decisões financeiras tomadas pelo usuário com base nos relatórios do aplicativo, nem por eventuais indisponibilidades temporárias de serviços de terceiros (como portais estaduais da SEFAZ ou rede móvel).</li>
+      </ul>
+
+      <h2>8. Segurança da Informação e Retenção</h2>
+      <p>
+        Adotamos controles técnicos rigorosos, incluindo transmissão criptografada via HTTPS/TLS, controle de acesso por regras de segurança autenticadas no banco de dados e isolamento de credenciais. Os dados são mantidos apenas enquanto sua conta estiver ativa ou até que você solicite a exclusão.
+      </p>
+
+      <h2>9. Identificação do Controlador e Canal de Contato (DPO)</h2>
+      <p>
+        Para dúvidas, solicitações relativas à LGPD, suporte técnico ou exercício de direitos do titular, entre em contato diretamente com o Controlador / Encarregado pelo Tratamento de Dados:
+      </p>
+      <ul>
+        <li><strong>Responsável / Controlador:</strong> Rafael Franchini – Rafa Tech Solutions</li>
+        <li><strong>E-mail de Contato e Suporte:</strong> <a href="mailto:rafaeltechsolutions@gmail.com">rafaeltechsolutions@gmail.com</a></li>
+        <li><strong>Localidade / Foro:</strong> Araras – Estado de São Paulo, Brasil (eleito para dirimir eventuais controvérsias, ressalvado o foro do domicílio do consumidor conforme o Código de Defesa do Consumidor).</li>
+      </ul>
+
+      <div class="footer">
+        <p><strong>Controle de Gastos</strong> • Rafa Tech Solutions<br>Última atualização e revisão jurídica (LGPD / Google Play): Novembro de 2026.</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
